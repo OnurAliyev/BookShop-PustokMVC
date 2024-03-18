@@ -1,0 +1,13 @@
+﻿@model Author
+<div class="container-fluid">
+    <h1>Create</h1>
+    <form method="post">
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Fullname</label>
+            <input asp-for="Fullname" class="form-control">
+            <span asp-validation-for="Fullname" class="text-danger"></span>
+        </div>
+        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+        <button type="submit" class="btn btn-outline-info">Save and Update</button>
+    </form>
+</div>
